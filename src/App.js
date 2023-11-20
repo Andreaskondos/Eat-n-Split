@@ -51,6 +51,7 @@ export default function App() {
       />
       {selectedFriend && (
         <Form
+          key={selectedFriend}
           id={selectedFriend}
           friends={friends}
           updateFriend={updateFriend}
